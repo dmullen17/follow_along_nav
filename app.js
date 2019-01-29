@@ -5,8 +5,8 @@ highlight.classList.add('highlight');
 document.body.append(highlight);
 
 /* Define Functions */
-function highlightLink(link) {
-    const linkCoords = link.getBoundingClientRect();
+function highlightLink() {
+    const linkCoords = this.getBoundingClientRect();
     
     const coords = {
         width: linkCoords.width,
@@ -20,18 +20,22 @@ function highlightLink(link) {
     highlight.style.transform = `translate(${coords.left}px, ${coords.top}px)`;
 }
 
-function highlightLinkCallback() {
+/* Listen for a hover event on each link */
+triggers.forEach(trigger => trigger.addEventListener('mouseenter', highlightLink));
+
+
+/* I was using these in order to use highlightLink in a callback function and on pageload */
+/*function highlightLinkCallback() {
     highlightLink(this);
 }
 
 function highlightLinkPageload() {
     const home = document.querySelector('a[name="Home"]');
     highlightLink(home)
-}
-
-/* Listen for a hover event on each link */
-triggers.forEach(trigger => trigger.addEventListener('mouseenter', highlightLinkCallback));
+}*/
+/*
 window.addEventListener('load', highlightLinkPageload);
+*/
 
 /* Define callback function using a closure */
 /*function callback(a) {
