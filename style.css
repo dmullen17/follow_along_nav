@@ -20,7 +20,7 @@ body {
     background: rgba(0, 0, 0, .03);
 }
 
-.nav-background {
+nav {
     height: 40vh;    
     background-image: url(catherine-heath-1309997-unsplash.jpg);
     background-size: cover;
@@ -37,6 +37,10 @@ body {
 
 .menu a {
     color: white;
+}
+
+.menu-bkg {
+    background: rgba(0, 0, 0, .7);
 }
 
 li {
@@ -58,6 +62,7 @@ a {
     font-size: 20px;
     line-height: 2;
     position: relative;
+    z-index: 1;
 }
 
 .wrapper a {
