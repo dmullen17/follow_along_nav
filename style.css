@@ -1,0 +1,53 @@
+html {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+/*    display: flex;
+    flex-direction: column;
+    align-items: center;*/
+        background: rgba(0, 0, 0, .03)
+
+}
+
+nav {
+    height: 40vh;    
+    background-image: url(catherine-heath-1309997-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.menu {
+    display: flex;
+    margin: 0;
+    padding: 10px 0 10px 0;
+    background: rgba(0, 0, 0, .7)
+}
+
+li {
+    flex: 1;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.wrapper {
+    padding-top: 20px;
+    margin: 0 auto;
+    max-width: 500px;
+    font-size: 20px;
+    line-height: 2;
+}
+
