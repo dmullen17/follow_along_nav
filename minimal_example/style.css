@@ -1,0 +1,56 @@
+.menu-bkg {
+    background: rgba(0, 0, 0, .7);
+}
+
+.menu {
+    display: flex;
+    margin: 0;
+    padding: 10px 0 10px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.highlight {
+    position: absolute;
+    z-index: 0;
+    background: #f7bb25;
+    transition: all 0.2s;
+    border-radius: 15px;
+    top: 0; /* Initialize at top of page*/
+    left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* Irrelevant CSS */
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.menu a {
+    color: white;
+}
+
+li {
+    flex: 1;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
