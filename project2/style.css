@@ -1,17 +1,72 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
     margin: 0;
 }
 
+
+section.home {
+    height: 65vh;
+}
+
+section.text {
+    width: 60vw;
+    margin: 60px auto;
+    position: relative;
+    z-index: 1; 
+    line-height: 2;
+    font-size: 20px;
+}
+
+section.text a {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* --------------------------------- */
+/* Navigation CSS                    */
+/* --------------------------------- */
+div.ul-bkg {
+    background: rgba(0, 0, 0, .7);
+}
+
+ul {
+    display: flex;
+    margin: 0;
+    padding: 10px 0 10px 0;
+    position: relative;
+    z-index: 1;
+}
+
+ul li {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li a {
+    color: white;
+}
+
+/* --------------------------------- */
+/* Highlighter                       */
+/* --------------------------------- */
 .hl {
-    background: #f09923;
-    transition: all .2s;
     position: absolute;
-    top: 0;
-    border-radius: 10px;
-    
-/*   
-    For testing
-    height: 20px; 
-    width: 20px;*/
-    z-index: -1;
+    z-index: 0;
+    background: #f09923;
+    transition: all 0.2s;
+    border-radius: 15px;
+    top: 0; /* Initialize at top of page*/
+    left: 0;
 }
